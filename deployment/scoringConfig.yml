@@ -1,0 +1,18 @@
+# name: insurance_inference_env
+dependencies:
+  - python=3.7.*
+  - pip=20.2.4
+  - pip:
+    # AzureML SDK and defaults
+    - azureml-sdk
+    - azureml-defaults>=1.0.76
+
+    # Machine Learning dependencies
+    - scikit-learn
+    - inference-schema[numpy-support]
+
+    # LightGBM for boosting
+    - lightgbm
+
+    # Joblib for serialization
+    - joblib
